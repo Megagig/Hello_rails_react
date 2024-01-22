@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'active_support/core_ext/integer/time'
-
+# Configuration settings for the development environment.
 Rails.application.configure do
   config.enable_reloading = true
   # Do not eager load code on boot.

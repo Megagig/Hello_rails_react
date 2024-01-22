@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+# model for the application
 class ApplicationRecord < ActiveRecord::Base
   primary_abstract_class
 end

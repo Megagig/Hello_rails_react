@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+# class  for the view
 class StaticController < ApplicationController
   def index; end
 end
