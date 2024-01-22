@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
@@ -18,12 +17,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    sourceMapFilename: '[name].js.map',
+    sourceMapFilename: '[file].map',
     path: path.resolve(__dirname, 'app/assets/builds'),
+    publicPath: '/',
   },
-  plugins: [
-    new webpack.optimize.LimitChunkCountPlugin({
-      maxChunks: 1,
-    }),
-  ],
 };
